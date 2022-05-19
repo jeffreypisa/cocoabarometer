@@ -1,0 +1,12 @@
+{% set sectionno = '0' %}
+
+{% for item in post.get_field('hoofdstukken') %}
+
+	{% set sectionno = sectionno + '1' %}
+	
+	{% if item.acf_fc_layout == 'hoofdstuk' %}
+		{% include 'hoofdstukken/hoofdstuk.twig' %}
+	
+	{% endif %}
+  
+{% endfor %}

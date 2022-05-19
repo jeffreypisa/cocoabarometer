@@ -827,7 +827,7 @@
         [
             {
                 "param": "post_type",
-                "operator": "==",
+                "operator": "!=",
                 "value": "page"
             }
         ]
@@ -843,5 +843,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1650718889
+    "modified": 1652971741
 }

@@ -18,8 +18,6 @@ function my_acf_fields_flexible_content_layout_title( $title, $field, $layout, $
 
 	$oldtitle = $title;
 	
-	
-	
 	// load text sub field
 	if( $text = get_sub_field('titel') ) {
 		$title = '';

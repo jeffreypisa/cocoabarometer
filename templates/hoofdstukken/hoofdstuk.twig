@@ -1,0 +1,26 @@
+<section id="hoofdstuk{{ sectionno }}" class="hoofstuk">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 offset-md-1 col-xl-8 offset-xl-2 {% if item.tekst_centreren %}text-center{% endif %}">
+				<div class="last-element-no-mb content-styling">
+					{% if item.subtitel %}
+						<h6 class="sub mb-2"> {{ item.subtitel }} </h6>
+					{% endif %}
+					{% if item.titel %}
+						<h2> {{ item.titel }} </h2>
+					{% endif %}
+					{% if item.lead %}
+						<p class="lead"> {{ item.lead }} </p>
+					{% endif %}
+					{% if item.tekst %}
+						<p> {{ item.tekst }} </p>
+					{% endif %}
+					{% if item.link %}
+						<br>
+						<a class="btn btn-primary" href="{{ item.link.url }}" target="{{ item.link.target }}">{{ item.link.title }}</a>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

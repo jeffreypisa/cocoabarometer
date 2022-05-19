@@ -1,0 +1,92 @@
+{
+    "key": "group_628658be7d4ab",
+    "title": "Hoofdstukken",
+    "fields": [
+        {
+            "key": "field_628658ea182b9",
+            "label": "Hoofdstukken",
+            "name": "hoofdstukken",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_6286595a3d11c": {
+                    "key": "layout_6286595a3d11c",
+                    "name": "hoofdstuk",
+                    "label": "Hoofdstuk",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_628658c63436e",
+                            "label": "Titel",
+                            "name": "titel",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_62865964c7c87",
+                            "label": "Tekst",
+                            "name": "tekst",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Nieuw hoofdstuk",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1652971931
+}

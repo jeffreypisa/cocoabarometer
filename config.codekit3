@@ -33,6 +33,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/acf-json\/group_628658be7d4ab.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/group_628658be7d4ab-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/acf-json\/group_6262996443583.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -671,6 +679,17 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/assets\/js\/tiny-code-btn-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/tiny-code-btn2-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/tiny-code-btn2-min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -1443,6 +1462,14 @@
       "oAP" : "\/lib\/optionspage.php",
       "oF" : 0
     },
+    "\/lib\/shortcode.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/lib\/shortcode.php",
+      "oF" : 0
+    },
     "\/lib\/svg.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1703,6 +1730,22 @@
       "oAP" : "\/templates\/header.twig",
       "oF" : 0
     },
+    "\/templates\/hoofdstukken.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/hoofdstukken.twig",
+      "oF" : 0
+    },
+    "\/templates\/hoofdstukken\/hoofdstuk.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/hoofdstukken\/hoofdstuk.twig",
+      "oF" : 0
+    },
     "\/templates\/html-header.twig" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1936,7 +1979,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 648499232.16711402,
-    "displayValue" : "starter",
+    "displayValue" : "cocoabarometer",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/assets\/favicon\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0
@@ -3192,7 +3235,7 @@
       }
     },
     "esLintSourceType" : 0,
-    "externalServerAddress" : "https:\/\/starter:8890",
+    "externalServerAddress" : "https:\/\/cocoabarometer.tst:8890",
     "gitIgnoreBuildFolder" : 0,
     "hideConfigFile" : 0,
     "jsCheckerReservedNamesString" : "",
