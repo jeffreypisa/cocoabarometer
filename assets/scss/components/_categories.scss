@@ -1,0 +1,9 @@
+.mod-categories {
+	a[href] {
+		color: $dark;
+		&:hover, &:focus, &.active {
+			color: $orange;
+			text-decoration: none;
+		}
+	}
+}

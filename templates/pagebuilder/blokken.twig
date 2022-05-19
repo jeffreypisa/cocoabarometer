@@ -1,0 +1,42 @@
+<section id="section{{ sectionno }}" class="pb-blokken">
+	{% if item.kolom %}
+		<div class="row g-0">
+		
+			{% for kolom in item.kolom %}
+				
+				{% if kolom.acf_fc_layout == 'content' %}
+					<div class="col-md">
+						<div class="kolom h-100 d-flex align-items-center {{ kolom.achtergrond }} {% if kolom.achtergrond == 'bg-dark' %}text-white{% endif %}">
+							<div class="kolom-space last-element-no-mb flex-fill content-styling">
+								{% if kolom.titel %}
+									<h2> {{ kolom.titel }} </h2>
+								{% endif %}
+								{% if kolom.tekst %}
+									<p> {{ kolom.tekst }} </p>
+								{% endif %}
+								{% if kolom.afbeeldingen %}
+									<br>
+									<div class="row g-5">
+									{% for image in kolom.afbeeldingen %}
+										<div class="col-6 col-sm text-center">
+											<img src="{{ Image(image) }}" alt="{{ p.alt }}" class="w-100 h-auto"> 
+										</div>
+									{% endfor %} 
+									</div>
+								{% endif %}
+								{% if kolom.link %}
+									<br>
+									<a class="btn btn-primary" href="{{ kolom.link.url }}" target="{{ kolom.link.target }}">{{ kolom.link.title }}</a>
+								{% endif %}
+							</div>
+						</div>
+					</div>
+				{% elseif kolom.acf_fc_layout == 'afbeelding' %}
+					<div class="col-md bg-cover" style="background-image: url({{ Image(kolom.afbeelding).src }})">
+					</div>
+				{% endif %}
+			{% endfor %}
+			
+		</div>
+	{% endif %}
+</section>

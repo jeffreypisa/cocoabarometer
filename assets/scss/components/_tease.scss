@@ -1,0 +1,66 @@
+.tease {
+	.box {
+		position: relative;
+		padding: 15px;
+		background: $dark;
+		color: #fff;
+		transition: .4s $ease;
+		padding-bottom: 60px;
+		.read-more-text {
+			position: absolute;
+			right: 20px;
+			bottom: 15px;
+			color: $primary;
+			font-size: 16px;
+			font-weight: 600;
+		}
+	}
+	.image-holder {
+		color: #fff;
+		overflow: hidden;
+		z-index: 1;
+		.image {
+			transition: 2s $ease;
+			transform: scale(1.01);
+		}
+		.content {
+			.badge {
+				position: absolute;
+				bottom: 20px;
+				left: 20px;
+			}
+			.read-more {
+				position: absolute;
+				bottom: 20px;
+				right: 20px;
+				i {
+					transition: 1s $ease;
+					transform: scale(.7);
+				}
+			}
+		}
+	}
+	&:hover {
+		.box {
+			background: $primary;
+			.read-more-text {
+				color: #fff;
+			}
+		}
+		.image-holder {
+			.image {
+				// transform: scale(1.2);
+				opacity: 0.8;
+				transition: 3s $ease;
+			}
+			.content {
+				.read-more {
+					i {
+						color: $primary;
+						margin-left: 20px;
+					}
+				}
+			}
+		}
+	}
+}

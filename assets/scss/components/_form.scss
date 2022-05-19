@@ -1,0 +1,57 @@
+.field-wrap .nf-field-element:after {
+	display: none;
+}
+
+body {
+	.nf-form-content {
+		padding: 0;
+		button, 
+		input[type=button], 
+		input[type=submit] {
+			@extend .btn;
+			@extend .btn-primary;
+		}
+		
+		.list-select-wrap .nf-field-element>div, 
+		input:not([type=button]), 
+		textarea {
+			@extend .form-control;
+		}
+		
+		label {
+			@extend .form-label;
+		} 
+	}
+	.bg-white, .bg-transparent {
+		.nf-form-content {
+			.list-select-wrap .nf-field-element>div, 
+			input:not([type=button]), 
+			textarea {
+				background: $greylight;
+			}
+		}
+	}
+}
+
+.form-select {
+	@extend .btn;
+	@extend .btn-primary;
+	padding-right: 50px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-image: url('../img/arrow.svg');
+	background-size: 18px 18px;
+	background-position: right 20px center;
+	&:hover, &:focus {
+		background-repeat: no-repeat;
+		background-image: url('../img/arrow.svg');
+		background-size: 18px 18px;
+		background-position: right 20px center;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.form-select {
+		width: auto;
+	}
+}

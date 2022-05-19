@@ -1,0 +1,47 @@
+{% if item.achtergrond == 'bg-dark' %}
+	{% set knopkleur = 'btn-light' %}
+{% elseif item.achtergrond == 'bg-greylight' %}
+	{% set knopkleur = 'btn-primary' %}
+{% else %}
+	{% set knopkleur = 'btn-primary' %}
+{% endif %}
+
+<section id="section{{ sectionno }}" class="pb-blog {{ item.achtergrond }} {% if item.achtergrond == 'bg-dark' %}text-white{% endif %}">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 offset-md-1 text-center">
+				{% if item.titel %}
+					<h2> {{ item.titel }} </h2>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	{% if item.weergave == 'recent' %}
+		<div class="container anime-fadein">
+			<div class="row justify-content-md-center">
+				{% for item in blog %}
+					<div class="col-md-4">
+						{% include ['tease-blog.twig'] %}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	{% else %}
+		{% if item.artikelen %}
+			<div class="container anime-fadein">
+				<div class="row justify-content-md-center">
+					{% for item in item.artikelen|slice(0,3) %}
+						<div class="col-md-4">
+							{% include ['tease-blog.twig'] %}
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		{% endif %}  
+	{% endif %}
+	<div class="text-center mt-4">
+		<a href="{{ site.link }}/blog" class="btn {{ knopkleur }}"> 
+			Meer
+		</a>
+	</div>
+</section>

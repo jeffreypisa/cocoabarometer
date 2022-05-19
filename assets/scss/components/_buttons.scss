@@ -1,0 +1,53 @@
+.btn {
+	&.btn-light {
+		background: #fff;
+		color: $dark;
+		&:hover, &:focus, &:target {
+			background: $dark;
+			color: #fff !important;
+		}
+	}
+	&.btn-dark {
+		background: $dark;
+		color: #fff;
+		&:hover, &:focus, &:target {
+			background: $primary;
+		}
+	}
+	&.btn-primary {
+		color: #fff;
+		&:hover, &:focus, &:target {
+			color: #fff !important;
+		}
+	}
+}
+
+.btn-link {
+	text-decoration: none;
+	color: $dark;
+	font-weight: 600;
+	font-size: 18px;
+	transition: 0.4s $ease;
+	&:after {
+		display: inline-block;
+		font-style: normal;
+		font-variant: normal;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		font-family: "Font Awesome 5";
+		font-weight: 700;
+		content: "\f061";
+		font-size: 16px;
+		transition: 0.4s $ease;
+		margin-left: 6px;
+		
+	}
+	&:hover {
+		text-decoration: none;
+		color: $primary;
+		&:after {
+			margin-left: 12px;
+			color: $primary;
+		}
+	}
+}

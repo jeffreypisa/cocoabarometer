@@ -1,0 +1,33 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="content-wrapper">
+		<article class="post-type-{{ post.post_type }}" id="post-{{ post.ID }}">
+			
+			<section class="pb-banner text-white d-flex align-items-center">
+				<div class="fill-space">
+					<div class="bg-cover" style="background-image: url({{ Image(post.thumbnail).src }})">
+					</div>
+				</div>
+				<div class="container text-start text-md-center">
+					<div class="row">
+						<div class="col-md-10 offset-md-1">							
+							<h1 class="mb-2 mt-3"> {{ post.title }} </h1>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="pb-content content-styling">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 offset-md-1 col-lg-8 offset-md-2">
+							<p><small><i>{{ post.date }}</i></small></p>
+							{{ post.content }}
+						</div>
+					</div>
+				</div>
+			</section>
+		</article>
+	</div><!-- /content-wrapper -->
+{% endblock %}

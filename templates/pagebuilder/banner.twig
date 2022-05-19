@@ -1,0 +1,27 @@
+{% if post.banner_weergave != 'verbergen' %}
+	<section id="banner" class="pb-banner d-flex align-items-center text-white {% if post.banner_weergave == 'toon_xl' %}toon-xl{% endif %}">
+		<div class="fill-space js-parallax">
+			<div class="bg-cover " style="background-image: url({{ Image(post.banner_afbeelding).src }})">
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-10 offset-1 offset-lg-2 col-lg-8 text-center">
+					<h2 class="h1 mb-3">
+						{% if post.banner_titel %}
+							{{ post.banner_titel }} 
+						{% else %}
+							{{ post.title }} 
+						{% endif %}
+					</h2>
+					{% if post.banner_tekst %}
+						<p class="lead mb-4"> {{ post.banner_tekst }} </p>
+					{% endif %}
+					{% if post.banner_link %}
+						<a class="btn btn-primary" href="{{ post.banner_link.url }}" target="{{ post.banner_link.target }}">{{ post.banner_link.title }}</a>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</section> 
+{% endif %}

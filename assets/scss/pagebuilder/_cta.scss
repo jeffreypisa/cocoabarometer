@@ -1,0 +1,12 @@
+.pb-cta {
+	position: relative;
+	overflow: hidden;
+	.fill-space {
+		z-index: 0;
+		opacity: 0.8;
+	}
+	.container {
+		z-index: 1;
+		position: relative;
+	}
+}

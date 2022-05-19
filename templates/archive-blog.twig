@@ -1,0 +1,50 @@
+{# This file demonstrates using most of the index.twig template and modifying 
+   just a small part. See `search.twig` for an example of another approach #}
+
+{% extends "base.twig" %}
+
+{% block content %}
+    <article class="post-type-{{ post.post_type }}" id="post-{{ post.ID }}">
+        <section class="mod-archive">
+            <div class="container">
+               <h1 class="mb-3 text-center">Blog</h1>
+               
+               {% if categories %}
+                  <div class="mod-categories mb-5">
+                     <div class="container text-center">
+                        <a href="{{ site.url }}/blog" class="{% if current_category == '' %}active{% endif %}">alle </a>
+                        {% for item in categories %}
+                           <span> | </span> 
+                           <a href="{{ item.link }}" class="{% if item.id == current_category %}active{% endif %}">{{ item.title|lower }}</a>
+                        {% endfor %}
+                     </div>
+                  </div>
+                  <br>
+               {% endif %}
+                                
+               <div id="theposts" class="row">
+                  {% for item in posts %}
+                      <div class="col-md-4">
+                          {% include ['tease-blog.twig'] %}
+                      </div>
+                  {% endfor %}
+               </div>
+               
+               {% if posts.pagination.next %}
+               
+                  <div class="col-12 text-center">
+                     <div class="load-more">
+                        <a class="btn btn-primary mt-5 " id="load-more-posts">
+                           Meer
+                        </a>
+                     </div>
+                  </div> 
+                
+               {% endif %}
+            </div>
+        </section>
+        
+        {% include 'pagebuilder.twig' %}
+        
+    </article>
+{% endblock %}
