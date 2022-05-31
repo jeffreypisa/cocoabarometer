@@ -13,6 +13,7 @@ include 'lib/videoembed.php';
 include 'lib/widgets.php';
 include 'lib/loadmoreposts.php';
 include 'lib/wpadmin.php';
+include 'lib/shortcode.php';
 
 // Set permalink structure projecten
 

@@ -15,9 +15,10 @@
 		}
 	}
 	&.btn-primary {
-		color: #fff;
+		color: $dark;
 		&:hover, &:focus, &:target {
-			color: #fff !important;
+			background: $dark;
+			color: $green !important;
 		}
 	}
 }
@@ -49,5 +50,63 @@
 			margin-left: 12px;
 			color: $primary;
 		}
+	}
+}
+.bg-brown {
+	.btn-scrollup {
+		position: fixed;
+		bottom: 30px;
+		font-size: 30px;
+		color: $brown;
+		opacity: 0.27;
+		right: 60px;
+		cursor: pointer;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	.btn-prev,
+	.btn-scrollup,
+	.btn-scrolldown {
+		color: #fff;
+	}
+}
+
+.btn-prev {
+	position: absolute;
+	top: 30px;
+	font-size: 30px;
+	color: $brown;
+	opacity: 0.27;
+	cursor: pointer;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.btn-scrollup {
+	position: fixed;
+	bottom: 30px;
+	font-size: 30px;
+	color: $brown;
+	opacity: 0.27;
+	right: 60px;
+	cursor: pointer;
+	z-index: 1;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.btn-scrolldown {
+	position: absolute;
+	bottom: 40px;
+	font-size: 30px;
+	color: $brown;
+	opacity: 0.27;
+	right: calc(50% - 15px);
+	cursor: pointer;
+	&:hover {
+		opacity: 1;
 	}
 }

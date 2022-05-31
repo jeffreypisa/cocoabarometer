@@ -57,6 +57,30 @@
       "oAP" : "\/archive.php",
       "oF" : 0
     },
+    "\/assets\/css\/main-blessed1-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/css\/main-blessed1-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/assets\/css\/main-blessed1.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/css\/main-blessed1-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/assets\/css\/main.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -265,6 +289,38 @@
       "oAP" : "\/assets\/favicon\/site.webmanifest",
       "oF" : 0
     },
+    "\/assets\/fonts\/AvenirNextLTPro-Bold.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/AvenirNextLTPro-Bold.woff",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/AvenirNextLTPro-Bold.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/AvenirNextLTPro-Bold.woff2",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/AvenirNextLTPro-Regular.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/AvenirNextLTPro-Regular.woff",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/AvenirNextLTPro-Regular.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/AvenirNextLTPro-Regular.woff2",
+      "oF" : 0
+    },
     "\/assets\/fonts\/fa-brands-400.eot" : {
       "cB" : 0,
       "ft" : 8192,
@@ -406,70 +462,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/assets\/fonts\/IBMPlexSans-Regular.woff" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/fonts\/IBMPlexSans-Regular.woff",
-      "oF" : 0
-    },
-    "\/assets\/fonts\/IBMPlexSans-Regular.woff2" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/fonts\/IBMPlexSans-Regular.woff2",
-      "oF" : 0
-    },
-    "\/assets\/fonts\/IBMPlexSans-SemiBold.woff" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/fonts\/IBMPlexSans-SemiBold.woff",
-      "oF" : 0
-    },
-    "\/assets\/fonts\/IBMPlexSans-SemiBold.woff2" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/fonts\/IBMPlexSans-SemiBold.woff2",
-      "oF" : 0
-    },
-    "\/assets\/fonts\/IBMPlexSerif-Regular.woff" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/fonts\/IBMPlexSerif-Regular.woff",
-      "oF" : 0
-    },
-    "\/assets\/fonts\/IBMPlexSerif-Regular.woff2" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/fonts\/IBMPlexSerif-Regular.woff2",
-      "oF" : 0
-    },
-    "\/assets\/fonts\/IBMPlexSerif-SemiBold.woff" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/fonts\/IBMPlexSerif-SemiBold.woff",
-      "oF" : 0
-    },
-    "\/assets\/fonts\/IBMPlexSerif-SemiBold.woff2" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/fonts\/IBMPlexSerif-SemiBold.woff2",
-      "oF" : 0
-    },
     "\/assets\/fonts\/light.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -545,7 +537,7 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/assets\/js\/scripts\/anime-min.js",
       "oF" : 0,
       "sC" : 3,
@@ -556,7 +548,7 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/assets\/js\/scripts\/footer_down-min.js",
       "oF" : 0,
       "sC" : 3,
@@ -578,7 +570,7 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/assets\/js\/scripts\/loadmoreposts-min.js",
       "oF" : 0,
       "sC" : 3,
@@ -600,7 +592,7 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/assets\/js\/scripts\/mobilemenu-min.js",
       "oF" : 0,
       "sC" : 3,
@@ -644,7 +636,7 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/assets\/js\/scripts\/slick-min.js",
       "oF" : 0,
       "sC" : 3,
@@ -1006,7 +998,7 @@
       "sct" : 0
     },
     "\/assets\/scss\/main.scss" : {
-      "aP" : 1,
+      "aP" : 0,
       "bl" : 0,
       "co" : 0,
       "dP" : 10,
@@ -1090,6 +1082,21 @@
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/assets\/scss\/pagebuilder\/_cta.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/scss\/pagebuilder\/_hoofdstuk.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/pagebuilder\/_hoofdstuk.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,

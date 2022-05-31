@@ -2,8 +2,11 @@ $enable-gradients: true;
 
 // Color system
 $dark: #000;
-$greylight: #efebf4;
-$primary:#009c86;
+$greylight: #C0AA9D;
+$brown: #5B2200;
+$green: #C1D828;
+
+$primary: $green;
 
 // Create your own map
 $custom-colors: (
@@ -16,6 +19,8 @@ $custom-colors: (
   "light":          $light,
   "dark":           $dark,
   "greylight":      $greylight,
+  "brown":          $brown,
+  "green":          $green
 );
 
 // Merge the maps

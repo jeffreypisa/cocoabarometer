@@ -4,8 +4,9 @@
 	{% endblock %}
 {% endblock %}
 
-	<body class="{{ body_class }}" data-template="base.twig" data-scroll-container>	
-		{% include 'mobilemenu.twig' %}
+	<body class="{{ body_class }} {% if post.achtergrond == 'bg-brown' %}bg-brown text-white{% else %}bg-white{% endif %}" data-template="base.twig" data-scroll-container>	
+		
+		<a href="javascript:void(0)" class="btn-scrollup js-scrollup"><i class="fas fa-chevron-up"></i></a>
 		
 		{% block header %}
 			{% include 'header.twig' %}
@@ -21,7 +22,7 @@
 		</main>
 		
 		{% block footer %}
-			{% include 'footer.twig' %}
+
 			{{ function('wp_footer') }}
 		{% endblock %}
 	</body>

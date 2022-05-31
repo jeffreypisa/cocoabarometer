@@ -40,20 +40,12 @@
 .pb-banner {
 	overflow: hidden;
 	position: relative;
-	min-height: 200px;
-	max-height: 750px;
+	min-height: 400px;
+	height: calc(100vh - 70px);
 	padding: 60px 0;
-	&:after {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		z-index: -4;
-		content: '';
-		background: $dark;
+	.btn {
+		margin-bottom: 4px;
 	}
-
 	&.toon-xl {
 		height: 80vh;
 		height: calc(var(--vh, 1vh) * 80);
@@ -61,6 +53,12 @@
 
 	&:after {
 		z-index: -4;
+	}
+	
+	
+	
+	h2 {
+		font-weight: 400;
 	}
 
 	.vimeo-wrapper {

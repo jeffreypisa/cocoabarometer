@@ -1,11 +1,11 @@
 {
     "key": "group_6262996443583",
-    "title": "Banner",
+    "title": "Pagina",
     "fields": [
         {
-            "key": "field_6263f8edf2bad",
-            "label": "Weergave",
-            "name": "banner_weergave",
+            "key": "field_629504eb6aee8",
+            "label": "Achtergrond",
+            "name": "achtergrond",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -16,9 +16,8 @@
                 "id": ""
             },
             "choices": {
-                "normaal": "Normaal",
-                "toon_xl": "XL",
-                "verbergen": "Niet tonen"
+                "bg-brown": "Bruin",
+                "bg-white": "Wit"
             },
             "default_value": false,
             "allow_null": 0,
@@ -29,53 +28,32 @@
             "placeholder": ""
         },
         {
-            "key": "field_6262ab8ce3c87",
-            "label": "Afbeelding",
-            "name": "banner_afbeelding",
-            "type": "image",
+            "key": "field_6262ab9ae3c89",
+            "label": "Titel",
+            "name": "banner_titel",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_6263f8edf2bad",
-                        "operator": "!=",
-                        "value": "verbergen"
-                    }
-                ]
-            ],
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "return_format": "array",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
         },
         {
-            "key": "field_6262ab9ae3c89",
-            "label": "Titel",
-            "name": "banner_titel",
+            "key": "field_6262ab9fe3c8a",
+            "label": "Subtitel",
+            "name": "banner_subtitel",
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_6263f8edf2bad",
-                        "operator": "!=",
-                        "value": "verbergen"
-                    }
-                ]
-            ],
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -88,54 +66,185 @@
             "maxlength": ""
         },
         {
-            "key": "field_6262ab9fe3c8a",
-            "label": "Tekst",
-            "name": "banner_tekst",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_6263f8edf2bad",
-                        "operator": "!=",
-                        "value": "verbergen"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
-        },
-        {
-            "key": "field_6262aba6e3c8b",
-            "label": "Link",
-            "name": "banner_link",
+            "key": "field_629504dd6aee7",
+            "label": "Terugknop",
+            "name": "banner_terugknop",
             "type": "link",
             "instructions": "",
             "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_6263f8edf2bad",
-                        "operator": "!=",
-                        "value": "verbergen"
-                    }
-                ]
-            ],
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
             "return_format": "array"
+        },
+        {
+            "key": "field_62950482a3ec1",
+            "label": "Knoppen",
+            "name": "banner_knoppen",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_629504b4a3ec5": {
+                    "key": "layout_629504b4a3ec5",
+                    "name": "lees",
+                    "label": "Lees",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_629504c1a3ec7",
+                            "label": "Titel knop",
+                            "name": "titel_knop",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6295049fa3ec3": {
+                    "key": "layout_6295049fa3ec3",
+                    "name": "link",
+                    "label": "Link",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6295049fa3ec4",
+                            "label": "Link",
+                            "name": "link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6295048ab3cd0": {
+                    "key": "layout_6295048ab3cd0",
+                    "name": "video",
+                    "label": "Video",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6295066709302",
+                            "label": "Titel knop",
+                            "name": "titel_knop",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_6295048fa3ec2",
+                            "label": "Videolink",
+                            "name": "videolink",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6295077b38ed1": {
+                    "key": "layout_6295077b38ed1",
+                    "name": "bestand",
+                    "label": "Bestand",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6295077b38ed2",
+                            "label": "Titel knop",
+                            "name": "titel_knop",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_6295077b38ed3",
+                            "label": "Bestand",
+                            "name": "bestand",
+                            "type": "file",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_size": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Nieuwe knop",
+            "min": "",
+            "max": ""
         }
     ],
     "location": [
@@ -158,5 +267,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1650719194
+    "modified": 1654009637
 }

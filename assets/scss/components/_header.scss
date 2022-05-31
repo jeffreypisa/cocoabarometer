@@ -9,13 +9,13 @@ header {
 	right: 0;
 	z-index: 100;
 	transition: 1s $ease;
-	height: 80px;
-	padding: 7px 0;
+	padding: 0;
 	background: #fff;
+	height: 70px;
 	.header-brand {
 		img {
 			display: block;
-			height: 30px;
+			height: 50px;
 			width: auto;
 		}
 	}
@@ -23,7 +23,7 @@ header {
 		margin-left: 20px;
 		padding: 0;
 		.nav-link {
-			color: #fff;
+			color: $dark;
 			height: 42px;
 			line-height: 42px;
 			padding: 0 20px;
@@ -33,22 +33,29 @@ header {
 		list-style-type: none;
 		li {
 			display: inline-block;
-			margin-left: 0;
+			margin-left: 10px;
 			a:not(.btn) {
 				text-decoration: none;
 				font-size: 18px;
 				font-weight: 600;
+				background: $green;
+				color: $dark;
+				&:hover, &:focus {
+					color: $primary;
+					background: #000;
+				}
+			}
+			&.current-lang,
+			&.current-lang:hover {
+				a:not(.btn) {
+					position: relative;
+					color: $primary;
+					background: #000;
+				}
 			}
 		}
 	}
 }
-
-@include media-breakpoint-down(lg) {
-	header {
-		position: absolute !important;
-	}
-}
-
 
 @include media-breakpoint-up(lg) {
 	header {
@@ -68,28 +75,6 @@ header {
 			background: $white;
 			.header-brand {
 				display: block;
-			}
-		}
-		&.nav-down {
-			box-shadow: $box-shadow;
-		}
-		ul {
-			list-style-type: none;
-			li {
-				display: inline-block;
-				margin-left: 5px;
-				a:not(.btn) {
-					&:hover, &:focus {
-
-					}
-				}
-				&.current-menu-item,
-				&.current-menu-item:hover {
-					a:not(.btn) {
-						position: relative;
-						color: $primary;
-					}
-				}
 			}
 		}
 	}

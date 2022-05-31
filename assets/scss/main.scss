@@ -18,10 +18,10 @@ Theme by Emonks
 @import '../fonts/fontawesome';
 
 // Custom settings
+@import 'settings/colors';
 @import 'settings/type';
 @import 'settings/images';
 @import 'settings/options';
-@import 'settings/colors';
 @import 'settings/components';
 @import 'settings/body';
 @import 'settings/buttons';
@@ -104,5 +104,6 @@ Theme by Emonks
 @import 'pagebuilder/blokken';
 @import 'pagebuilder/content';
 @import 'pagebuilder/cta';
+@import 'pagebuilder/hoofdstuk';
 @import 'pagebuilder/quote';
 @import 'pagebuilder/video';

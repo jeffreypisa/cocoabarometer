@@ -1,0 +1,13 @@
+.hoofdstuk {
+	.titel {
+		position: relative;
+		min-height: calc(100vh - 70px);
+	}
+}
+.content {
+	min-height: calc(100vh);
+	position: relative;
+	.card {
+		margin-bottom: 80px;
+	}
+}
