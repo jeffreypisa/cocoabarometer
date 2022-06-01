@@ -1,8 +1,9 @@
 <section id="banner" class="pb-banner d-flex align-items-center">
 	<a class="btn-scrolldown js-scrolldown"><i class="fas fa-chevron-down"></i></a>
 	<div class="container">
+		<div class="switchtodesktop">{{ options.please_switch_to_tablet_or_desktop_for_best_experience }} </div>
 		{% if post.banner_terugknop %}
-			<a href="{{ post.banner_terugknop.url }}"><i class="btn-prev fas fa-chevron-left"></i></a>
+			<a class="btn-prev" href="{{ post.banner_terugknop.url }}"><i class="fas fa-chevron-left"></i></a>
 		{% endif %}
 		<div class="row">
 			<div class="col-md-10 offset-md-1 text-center">
@@ -17,26 +18,34 @@
 					<h3 class="mb-4 weight-400"> {{ post.banner_subtitel }} </h3>
 				{% endif %}
 				<br><br>
-				<div class="buttons">				
-					{% for item in post.get_field('banner_knoppen') %}
-						{% if item.acf_fc_layout == 'video' %}
-							<a href="{{ item.videolink }}" class="btn btn-primary" data-lightbox> 
-								{{ item.titel_knop }} <i class="fas fa-chevron-right"></i>
+				<div class="buttons">		
+					{% if post.weergave == 'dropdown' %}		
+						{% for item in post.get_field('banner_knoppen') %}
+							{% if item.acf_fc_layout == 'video' %}
+								<a href="{{ item.videolink }}" class="btn btn-primary" data-lightbox> 
+									{{ item.titel_knop }} <i class="fas fa-chevron-right"></i>
+								</a>
+							{% elseif item.acf_fc_layout == 'link' %}
+								<a href="{{ item.link.url }}" target="{{ item.link.target }}" class="btn btn-primary"> 
+									{{ item.link.title }} <i class="fas fa-chevron-right"></i>
+								</a>
+							{% elseif item.acf_fc_layout == 'lees' %}	
+								<a href="javascript:void(0)" class="js-scrolldown btn btn-primary"> 
+									{{ item.titel_knop }} <i class="fas fa-chevron-right"></i>
+								</a>
+							{% elseif item.acf_fc_layout == 'bestand' %}	
+								<a href="{{ item.bestand.url }}" target="_blank" class="btn btn-primary"> 
+									{{ item.titel_knop }} <i class="fas fa-chevron-right"></i>
+								</a>
+							{% endif %}
+						{% endfor %}
+					{% else %}
+						{% for item in post.get_field('aanbevelingen') %}
+							<a href="#recommendation{{ sectionno }}-{{ item.titel|sanitize }}" class="btn btn-primary"> 
+								{{ item.titel }} <i class="fas fa-chevron-right"></i>
 							</a>
-						{% elseif item.acf_fc_layout == 'link' %}
-							<a href="{{ item.link.url }}" target="_blank" class="btn btn-primary"> 
-								{{ item.link.title }} <i class="fas fa-chevron-right"></i>
-							</a>
-						{% elseif item.acf_fc_layout == 'lees' %}	
-							<a href="javascript:void(0)" class="js-scrolldown btn btn-primary"> 
-								{{ item.titel_knop }} <i class="fas fa-chevron-right"></i>
-							</a>
-						{% elseif item.acf_fc_layout == 'bestand' %}	
-							<a href="{{ item.bestand.url }}" target="_blank" class="btn btn-primary"> 
-								{{ item.titel_knop }} <i class="fas fa-chevron-right"></i>
-							</a>
-						{% endif %}
-					{% endfor %}
+						{% endfor %}
+					{% endif %}
 				</div>
 			</div>
 		</div>

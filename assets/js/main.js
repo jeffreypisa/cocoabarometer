@@ -1,10 +1,10 @@
 import $ from "jquery";
-import 'bootstrap';
+import bootstrap from 'bootstrap/dist/js/bootstrap.bundle';
 
 // Init plugins
 // import { slick_init } from './scripts/slick.js';
 import { matchheight_init } from './scripts/matchheight.js';
-// import { animejs } from './scripts/anime.js';
+import { animejs } from './scripts/anime.js';
 import { lity_init } from './scripts/lity.js';
 import { simpleparallax } from './scripts/simpleparallax.js';
 
@@ -33,14 +33,39 @@ $( document ).ready(function() {
 			scrollTop: 0
 		}, 600);    
 	});
+	
+	$(window).scroll((function() {
+	  let w = (document.body.scrollTop || document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 100;
+	  $(".progress-bar").css({width: w + "%"})
+	}));
+	
+
+	var collapseElementList = [].slice.call(document.querySelectorAll('.collapse'))
+	var collapseList = collapseElementList.map(function (collapseEl) {
+	  	return new bootstrap.Collapse(collapseEl, {
+	  		toggle: false
+		})
+	})
+	
+	$('.uitklap').click(function() {
+		var thecollapsable = $(this).next();
+		new bootstrap.Collapse(thecollapsable)
+	});
+	
+  	$('#dynamic_select').on('change', function () {
+	  	var url = $(this).val(); // get selected value
+	  	if (url) { // require a URL
+		  	window.location = url; // redirect
+	  	}
+	  	return false;
+  	});
+
+	  
 });
 
 $(window).on('load', function() {
 	matchheight_init();
-	// animejs();
+	animejs();
 	sticky_header();
 	site_is_loaded();
-	
-	var jaa = $('.text_popover_global').attr('data-content');
-	$('.text_popover_global').append('<span class="cor">' + jaa + '</span>');
 });

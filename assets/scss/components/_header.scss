@@ -1,77 +1,81 @@
 body {
-	padding-top: 80px;
+	padding-top: 70px;
 }
 
 header {
-	position: absolute;
+	position: fixed !important;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 100;
 	transition: 1s $ease;
-	padding: 0;
-	background: #fff;
-	height: 70px;
-	.header-brand {
-		img {
-			display: block;
-			height: 50px;
-			width: auto;
-		}
-	}
-	.nav-item.btn {
-		margin-left: 20px;
+	.header {
 		padding: 0;
-		.nav-link {
-			color: $dark;
-			height: 42px;
-			line-height: 42px;
-			padding: 0 20px;
-		}
-	}
-	ul {
-		list-style-type: none;
-		li {
-			display: inline-block;
-			margin-left: 10px;
-			a:not(.btn) {
-				text-decoration: none;
-				font-size: 18px;
-				font-weight: 600;
-				background: $green;
-				color: $dark;
-				&:hover, &:focus {
-					color: $primary;
-					background: #000;
-				}
+		background: #fff;
+		height: 70px;
+		.header-brand {
+			img {
+				display: block;
+				height: 50px;
+				width: auto;
 			}
-			&.current-lang,
-			&.current-lang:hover {
+		}
+		.nav-item.btn {
+			margin-left: 20px;
+			padding: 0;
+			.nav-link {
+				color: $dark;
+				height: 42px;
+				line-height: 42px;
+				padding: 0 20px;
+			}
+		}
+		ul {
+			list-style-type: none;
+			li {
+				display: inline-block;
+				margin-left: 10px;
 				a:not(.btn) {
-					position: relative;
-					color: $primary;
-					background: #000;
+					text-decoration: none;
+					font-size: 18px;
+					font-weight: 600;
+					background: $green;
+					color: $dark;
+					padding: 10px 10px 6px;
+					line-height: 18px;
+					border-radius: 2px;
+					&:hover, &:focus {
+						color: $primary;
+						background: #000;
+					}
+				}
+				&.current-lang,
+				&.current-lang:hover {
+					a:not(.btn) {
+						position: relative;
+						color: $primary;
+						background: #000;
+					}
 				}
 			}
 		}
 	}
 }
-
-@include media-breakpoint-up(lg) {
-	header {
-		position: fixed;
-		&.nav-up {
-			transform: translateY(-100%);
-			transition-delay: color .6s;
-			.header-brand {
-				transition-delay: background .6s;
-			}
-		}
-		&.nav-down {
-			transform: translateY(0);
+header {
+	position: fixed;
+	&.nav-up {
+		transform: translateY(-100%);
+		transition-delay: color .6s;
+		.header-brand {
 			transition-delay: background .6s;
 		}
-		&.nav-up, &.nav-down {
+	}
+	&.nav-down {
+		transform: translateY(0);
+		transition-delay: background .6s;
+	}
+	&.nav-up, &.nav-down {
+		.header {
 			background: $white;
 			.header-brand {
 				display: block;

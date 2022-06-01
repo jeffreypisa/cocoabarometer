@@ -1,15 +1,49 @@
-<header class="header d-flex align-items-center bg-greylight">
-	<div class="container-fluid container-lg"> 
-		<div class="row g-2">
-			<div class="col d-flex align-items-center">
-				<a class="header-brand" href="{{ site.url }}" rel="home">
-					<span class="d-none">{{ site.name }}</span>
-					<img src="{{ Image(options.logo).src }}" alt="{{ Image(options.logo).alt }}">
-				</a>
-			</div>
-			<div class="col-auto d-flex align-items-center">
-				{% include "menu.twig" with {'items': menu.get_items} %}
+<header>
+	<div class="header d-flex align-items-center bg-greylight">
+		<div class="container-fluid container-lg"> 
+			<div class="row g-2">
+				<div class="col d-flex align-items-center">
+					<a class="header-brand" href="{{ post.banner_terugknop.url }}" rel="home">
+						<span class="d-none">{{ site.name }}</span>
+						<img src="{{ Image(options.logo).src }}" alt="{{ Image(options.logo).alt }}">
+					</a>
+				</div>
+				<div class="col-auto d-flex align-items-center">
+					{% include "menu.twig" with {'items': menu.get_items} %}
+				</div>
 			</div>
 		</div>
 	</div>
+	{% if post.weergave == 'dropdown' %}
+		<div class="progress-and-chapter-select">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+						<div class="card bg-white">
+							<div class="card-body p-2">
+								<div class="progress mb-2">
+								  <div class="progress-bar bg-green" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								
+								{% set sectionno = '0' %}
+								
+								<select id="dynamic_select" class="form-select w-100" >
+								{% for item in post.get_field('hoofdstukken') %}
+								
+									{% set sectionno = sectionno + '1' %}
+									
+									{% if item.acf_fc_layout == 'hoofdstuk' %}
+										<option value="#chapter{{ sectionno }}-{{ item.titel|sanitize }}"> {{ item.titel }}</option>
+									
+									{% endif %}
+								  
+								{% endfor %}
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endif %}
 </header>

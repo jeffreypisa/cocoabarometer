@@ -13,19 +13,3 @@ include 'lib/videoembed.php';
 include 'lib/widgets.php';
 include 'lib/loadmoreposts.php';
 include 'lib/wpadmin.php';
-include 'lib/shortcode.php';
-
-// Set permalink structure projecten
-
-function wpa_blog_permalinks( $post_link, $post ){
-	if ( is_object( $post ) && $post->post_type == 'blog' ){
-		$terms = wp_get_object_terms( $post->ID, 'blog_category' );
-		if( $terms ){
-			return str_replace( '%blog_category%' , $terms[0]->slug , $post_link );
-		}
-	}
-	return $post_link;
-}
-add_filter( 'post_type_link', 'wpa_blog_permalinks', 1, 2 );
-
-

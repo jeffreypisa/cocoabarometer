@@ -4,17 +4,17 @@
 	{% endblock %}
 {% endblock %}
 
-	<body class="{{ body_class }} {% if post.achtergrond == 'bg-brown' %}bg-brown text-white{% else %}bg-white{% endif %}" data-template="base.twig" data-scroll-container>	
+	<body class="{{ body_class }} {% if post.weergave == 'dropdown' %}bg-brown text-white{% else %}bg-white{% endif %}" data-template="base.twig" data-scroll-container>	
 		
 		<a href="javascript:void(0)" class="btn-scrollup js-scrollup"><i class="fas fa-chevron-up"></i></a>
-		
+				
 		{% block header %}
 			{% include 'header.twig' %}
 		{% endblock %}
 		
 		<main>
 			{% if post.title %}
-				<h1 class="d-none">{{ title }}</h1>
+				<h1 class="d-none">{{ post.title }}</h1>
 			{% endif %}
 			{% block content %}
 				Sorry, no content

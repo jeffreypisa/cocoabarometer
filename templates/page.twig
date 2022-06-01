@@ -3,6 +3,12 @@
 {% block content %}
 	<article class="post-type-{{ post.post_type }}" id="post-{{ post.ID }}">
 		{% include 'pagebuilder/banner.twig' %}
-		{% include 'hoofdstukken.twig' %}
+		{% if post.weergave == 'dropdown' %}
+			{% include 'hoofdstukken.twig' %}
+		{% else %}
+			{% for item in post.get_field('aanbevelingen') %}
+				{% include 'hoofdstukken/aanbeveling.twig' %}
+			{% endfor %}
+		{% endif %}
 	</article>
 {% endblock %}

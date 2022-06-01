@@ -3,9 +3,9 @@
     "title": "Pagina",
     "fields": [
         {
-            "key": "field_629504eb6aee8",
-            "label": "Achtergrond",
-            "name": "achtergrond",
+            "key": "field_6297292f2026d",
+            "label": "Weergave",
+            "name": "weergave",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -16,8 +16,8 @@
                 "id": ""
             },
             "choices": {
-                "bg-brown": "Bruin",
-                "bg-white": "Wit"
+                "dropdown": "Publicatie",
+                "knoppen": "Aanbevelingen"
             },
             "default_value": false,
             "allow_null": 0,
@@ -72,7 +72,15 @@
             "type": "link",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6297292f2026d",
+                        "operator": "==",
+                        "value": "knoppen"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -87,7 +95,15 @@
             "type": "flexible_content",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6297292f2026d",
+                        "operator": "==",
+                        "value": "dropdown"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -245,6 +261,148 @@
             "button_label": "Nieuwe knop",
             "min": "",
             "max": ""
+        },
+        {
+            "key": "field_628658ea182b9",
+            "label": "Hoofdstukken",
+            "name": "hoofdstukken",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6297292f2026d",
+                        "operator": "==",
+                        "value": "dropdown"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_6286595a3d11c": {
+                    "key": "layout_6286595a3d11c",
+                    "name": "hoofdstuk",
+                    "label": "Hoofdstuk",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_628658c63436e",
+                            "label": "Titel",
+                            "name": "titel",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_62865964c7c87",
+                            "label": "Tekst",
+                            "name": "tekst",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Nieuw hoofdstuk",
+            "min": "",
+            "max": ""
+        },
+        {
+            "key": "field_62978279ca689",
+            "label": "Aanbevelingen",
+            "name": "aanbevelingen",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6297292f2026d",
+                        "operator": "==",
+                        "value": "knoppen"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Nieuwe aanbeveling",
+            "sub_fields": [
+                {
+                    "key": "field_62978289ca68a",
+                    "label": "Titel",
+                    "name": "titel",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62978290ca68b",
+                    "label": "Tekst",
+                    "name": "tekst",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ]
         }
     ],
     "location": [
@@ -267,5 +425,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1654009637
+    "modified": 1654096866
 }

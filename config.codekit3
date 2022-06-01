@@ -33,14 +33,6 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/acf-json\/group_628658be7d4ab.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/acf-json\/group_628658be7d4ab-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
     "\/acf-json\/group_6262996443583.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -125,6 +117,19 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/assets\/favicon\/android-chrome-144x144.png" : {
+      "ft" : 32768,
+      "iS" : 6176,
+      "oA" : 0,
+      "oAP" : "\/assets\/favicon\/android-chrome-144x144.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/favicon\/android-chrome-192x192.png" : {
       "ft" : 32768,
       "iS" : 5548,
@@ -153,7 +158,7 @@
     },
     "\/assets\/favicon\/apple-touch-icon.png" : {
       "ft" : 32768,
-      "iS" : 4328,
+      "iS" : 3009,
       "oA" : 0,
       "oAP" : "\/assets\/favicon\/apple-touch-icon.png",
       "oF" : 0,
@@ -174,7 +179,7 @@
     },
     "\/assets\/favicon\/favicon-16x16.png" : {
       "ft" : 32768,
-      "iS" : 690,
+      "iS" : 774,
       "oA" : 0,
       "oAP" : "\/assets\/favicon\/favicon-16x16.png",
       "oF" : 0,
@@ -187,7 +192,7 @@
     },
     "\/assets\/favicon\/favicon-32x32.png" : {
       "ft" : 32768,
-      "iS" : 1472,
+      "iS" : 1351,
       "oA" : 0,
       "oAP" : "\/assets\/favicon\/favicon-32x32.png",
       "oF" : 0,
@@ -234,7 +239,7 @@
     },
     "\/assets\/favicon\/mstile-150x150.png" : {
       "ft" : 32768,
-      "iS" : 4363,
+      "iS" : 6635,
       "oA" : 0,
       "oAP" : "\/assets\/favicon\/mstile-150x150.png",
       "oF" : 0,
@@ -492,6 +497,26 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/assets\/img\/arrow-black.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/arrow-black.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/img\/arrow-green.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/arrow-green.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/img\/arrow.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -537,7 +562,7 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/assets\/js\/scripts\/anime-min.js",
       "oF" : 0,
       "sC" : 3,
@@ -649,50 +674,6 @@
       "mi" : 1,
       "oA" : 1,
       "oAP" : "\/assets\/js\/scripts\/sticky_header-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/assets\/js\/tiny-code-btn-min.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/assets\/js\/tiny-code-btn-min-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/assets\/js\/tiny-code-btn.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/assets\/js\/tiny-code-btn-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/assets\/js\/tiny-code-btn2-min.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/assets\/js\/tiny-code-btn2-min-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/assets\/js\/tiny-code-btn2.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/assets\/js\/tiny-code-btn2-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -917,6 +898,21 @@
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/assets\/scss\/components\/_mobilemenu.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/scss\/components\/_progressbar.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/components\/_progressbar.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
@@ -1469,14 +1465,6 @@
       "oAP" : "\/lib\/optionspage.php",
       "oF" : 0
     },
-    "\/lib\/shortcode.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/lib\/shortcode.php",
-      "oF" : 0
-    },
     "\/lib\/svg.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1743,6 +1731,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/hoofdstukken.twig",
+      "oF" : 0
+    },
+    "\/templates\/hoofdstukken\/aanbeveling.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/hoofdstukken\/aanbeveling.twig",
       "oF" : 0
     },
     "\/templates\/hoofdstukken\/hoofdstuk.twig" : {

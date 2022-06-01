@@ -5,6 +5,7 @@ $dark: #000;
 $greylight: #C0AA9D;
 $brown: #5B2200;
 $green: #C1D828;
+$pink: #CE2373;
 
 $primary: $green;
 
@@ -20,7 +21,8 @@ $custom-colors: (
   "dark":           $dark,
   "greylight":      $greylight,
   "brown":          $brown,
-  "green":          $green
+  "green":          $green,
+  "pink":           $pink
 );
 
 // Merge the maps
