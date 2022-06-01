@@ -41,7 +41,8 @@
 	overflow: hidden;
 	position: relative;
 	min-height: calc(100vh - 120px);
-	padding: 120px 0;
+	padding: 120px 0 60px;
+	overflow: hidden;
 	.btn {
 		margin-bottom: 4px;
 	}
@@ -60,5 +61,11 @@
 		font-size: 15px;
 		font-style: italic;
 		text-align: center;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.pb-banner {
+		padding: 120px 0;
 	}
 }

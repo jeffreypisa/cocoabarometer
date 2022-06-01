@@ -15,9 +15,9 @@
 					{% endif %}
 				</h2>
 				{% if post.banner_subtitel %}
-					<h3 class="mb-4 weight-400"> {{ post.banner_subtitel }} </h3>
+					<h3 class="mb-3 mb-md-4 weight-400"> {{ post.banner_subtitel }} </h3>
 				{% endif %}
-				<br><br>
+				<br>
 				<div class="buttons">		
 					{% if post.weergave == 'dropdown' %}		
 						{% for item in post.get_field('banner_knoppen') %}
