@@ -65,6 +65,9 @@ $( document ).ready(function() {
 	  	var url = $(this).val(); // get selected value
 	  	if (url) { // require a URL
 		  	window.location = url; // redirect
+			  $("html, body").stop(true,false).animate({
+				  scrollTop: $(url).offset().top + $(window).height()
+			  }, 0, easeInOutQuad);
 	  	}
 	  	return false;
   	});

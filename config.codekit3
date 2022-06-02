@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34365",
   "files" : {
+    "\/.nova\/Publishing\/Cocoa Barometer.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/.nova\/Publishing\/Cocoa Barometer-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/.nova\/Publishing\/Emonks.json" : {
       "ft" : 524288,
       "oA" : 1,

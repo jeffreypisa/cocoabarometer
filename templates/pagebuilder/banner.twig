@@ -1,5 +1,9 @@
 <section id="banner" class="pb-banner d-flex align-items-center bg-brown text-white">
-	<a class="btn-scrolldown js-startreading"><i class="fas fa-chevron-down"></i></a>
+	{% if post.weergave == 'dropdown' %}
+		<a class="btn-scrolldown js-startreading"><i class="fas fa-chevron-down"></i></a>
+	{% else %}
+		<a class="btn-scrolldown js-scrolldown"><i class="fas fa-chevron-down"></i></a>
+	{% endif %}
 	<div class="container">
 		<div class="switchtodesktop">{{ options.please_switch_to_tablet_or_desktop_for_best_experience }} </div>
 		{% if post.banner_terugknop %}
