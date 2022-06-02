@@ -40,15 +40,20 @@
 .pb-banner {
 	overflow: hidden;
 	position: relative;
-	min-height: calc(100vh - 120px);
-	padding: 120px 0 60px;
+	min-height: calc(100vh - 70px);
+	padding: 60px 0 60px;
 	overflow: hidden;
+	z-index: 2;
+	transform: translateZ(1px);
 	.btn {
 		margin-bottom: 4px;
 	}
 		
 	h2 {
 		font-weight: 400;
+		strong {
+			font-size: 45px;
+		}
 	}
 	.switchtodesktop {
 		position: absolute;
@@ -64,8 +69,32 @@
 	}
 }
 
+@include media-breakpoint-up(sm) {
+	.pb-banner {
+		h2 {
+			strong {
+				font-size: 58px;
+			}
+		}
+	}
+}
+
 @include media-breakpoint-up(md) {
 	.pb-banner {
-		padding: 120px 0;
+		h2 {
+			strong {
+				font-size: 60px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.pb-banner {
+		h2 {
+			strong {
+				font-size: 79px;
+			}
+		}
 	}
 }

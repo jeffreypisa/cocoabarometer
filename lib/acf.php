@@ -13,7 +13,7 @@ function my_acf_json_save_point( $path ) {
     
 }
 
-add_filter('acf/fields/flexible_content/layout_title/name=stroken', 'my_acf_fields_flexible_content_layout_title', 10, 4);
+add_filter('acf/fields/flexible_content/layout_title/name=hoofdstukken', 'my_acf_fields_flexible_content_layout_title', 10, 4);
 function my_acf_fields_flexible_content_layout_title( $title, $field, $layout, $i ) {
 
 	$oldtitle = $title;

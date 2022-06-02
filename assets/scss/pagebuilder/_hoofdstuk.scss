@@ -5,10 +5,10 @@
 	left: 0;
 	right: 0;
 	transition: .4s $ease;
-	box-shadow: 0px 2px 4px rgba($brown, .1);
 	.card {
 		border: 0;
 		border-radius: 0;
+		box-shadow: 0px 2px 4px rgba($brown, .1);
 		height: 70px;
 	}
 	&.hide {
@@ -16,11 +16,43 @@
 	}
 }
 .hoofdstuk {
-	.titel {
+	position: relative;
+	padding: 0;
+	overflow: initial;
+	transform: translateZ(0px);
+	&.recommendation {
+		padding: 60px 0;
+	}
+	.card {
+		border: 0;
+	}
+	.wrap {
+		margin-top: -100vh;
+		height: 200vh;
+		background: #fff;
+		z-index: 0;
 		position: relative;
-		min-height: calc(100vh - 120px);
-		.card {
-			border: 0;
+		.titel {
+			position: -webkit-sticky; /* Safari */
+			position: sticky;
+			top: 0;
+			left: 0;
+			height: 100vh;
+			width: 100vw;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-direction: column;
+			flex-direction: column;
+			-webkit-justify-content: center;
+			justify-content: center;
+			min-height: 100vh;
+			margin: 0 auto;
+			h2, i {
+				color: $pink !important;
+			}
+			.card {
+				border: 0;
+			}
 		}
 	}
 }
@@ -28,6 +60,8 @@
 	min-height: calc(100vh);
 	padding-bottom: 120px;
 	position: relative;
+	z-index: 1;
+	transform: translateZ(0);
 	.btn-scrolldown {
 		bottom: 30px;
 	}
@@ -75,6 +109,9 @@
 }
 
 @include media-breakpoint-up(lg) {
+	.hoofdstuk.recommendation {
+		padding: 120px 0;
+	}
 	.content {
 		.aanbeveling,
 		.sidelink {

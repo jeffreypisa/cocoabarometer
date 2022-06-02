@@ -10,4 +10,12 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	min-height: 100vh;
+	min-height: fill-available;
+	min-height: -webkit-fill-available;
+}
+
+html {
+	height: fill-available;
+	height: -webkit-fill-available;
 }

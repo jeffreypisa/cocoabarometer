@@ -17,7 +17,12 @@ export function animejs() {
 		$(el).addClass('visible');
 	});
 	
-		  
+	inView('section.hoofdstuk').on('enter', el => {
+		$(el).removeClass('show-title-only ');
+	}).on('exit', el => {
+		$(el).addClass('show-title-only ');
+	});
+	  
 	inView('section.content')
 	.on('enter', el => {
 		var theid = $(el).prev().attr('id');
