@@ -4,20 +4,22 @@
 	{% else %}
 		<a class="btn-scrolldown js-scrolldown"><i class="fas fa-chevron-down"></i></a>
 	{% endif %}
-	<div class="container">
-		<div class="switchtodesktop">{{ options.please_switch_to_tablet_or_desktop_for_best_experience }} </div>
+	<div class="container-fluid container-lg">
+		<div class="switchtodesktop d-md-none">{{ options.please_switch_to_tablet_or_desktop_for_best_experience }} </div>
 		{% if post.banner_terugknop %}
 			<a class="btn-prev" href="{{ post.banner_terugknop.url }}"><i class="fas fa-chevron-left"></i></a>
 		{% endif %}
+		<div class="text-center">
+			<h2 class="h1 mb-2">
+				{% if post.banner_titel %}
+					{{ post.banner_titel }} 
+				{% else %}
+					{{ post.title }} 
+				{% endif %}
+			</h2>
+		</div>
 		<div class="row">
 			<div class="col-md-10 offset-md-1 text-center">
-				<h2 class="h1 mb-2">
-					{% if post.banner_titel %}
-						{{ post.banner_titel }} 
-					{% else %}
-						{{ post.title }} 
-					{% endif %}
-				</h2>
 				{% if post.banner_subtitel %}
 					<h3 class="mb-3 mb-md-4 weight-400"> {{ post.banner_subtitel }} </h3>
 				{% endif %}
