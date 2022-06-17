@@ -12,7 +12,7 @@
 		height: 70px;
 	}
 	&.hide {
-		top: 0;
+		top: 0px;
 	}
 }
 .hoofdstuk {
@@ -69,29 +69,43 @@
 		border: 0;
 		margin-bottom: 80px;
 	}
-	.aanbeveling,
-	.sidelink {
-		width: 180px;
-		font-size: 16px;
-		position: absolute;
-		display: none;
-	}
-	.aanbeveling {
-		right: calc(100% + 20px);
-	}
-	.sidelink {
-		left: calc(100% + 20px);
+	a:not(.btn):not(.form-select) {
+		color: $pink;
+		&:hover {
+			color: $pink;
+			text-decoration: underline;
+		}
+		&.aanbeveling,
+		&.sidelink {
+			width: 180px;
+			font-size: 16px;
+			position: absolute;
+			display: none;
+			color: #fff;
+			&:hover {
+				color: #fff;
+				text-decoration: underline;
+			}
+		}
+	
+		&.aanbeveling {
+			right: calc(100% + 20px);
+		}
+		&.sidelink {
+			left: calc(100% + 20px);
+		}
 	}
 	.uitklap {
+		display: inline-block;
 		i {
 			font-size: 15px;
-			color: $brown;
+			color: $pink;
 			transition: .3s $ease;
 			opacity: .5;
 		}
 		&:hover {
 			i {
-				color: $green;
+				color: $pink;
 				opacity: 1;
 			}
 		}
@@ -113,9 +127,11 @@
 		padding: 120px 0;
 	}
 	.content {
-		.aanbeveling,
-		.sidelink {
-			display: block;
+		a:not(.btn):not(.form-select) {
+			&.aanbeveling,
+			&.sidelink {
+				display: block;
+			}
 		}
 	}
 }

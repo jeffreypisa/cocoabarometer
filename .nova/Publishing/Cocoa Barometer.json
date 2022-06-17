@@ -1,5 +1,6 @@
 {
   "identifier" : "2A0860BB-412C-4FA3-A7BD-AC671AB90986",
+  "remotePath" : "\/public_html\/wp-content\/themes\/cocoabarometer",
   "server" : "Cocoa Barometer",
-  "usesPublishing" : false
+  "usesPublishing" : true
 }
